@@ -127,6 +127,269 @@ let divisionResult = number1 / number2;
 // Tulosta jakolaskun tulos konsoliin
 console.log("Jakolaskun tulos:", divisionResult);
 
+// Määritellään muuttujat kullekin ostoskorissa olevalle tuotteelle ja niiden hinnoille
+let product1Price = 29.99; // Tuotteen 1 hinta
+let product2Price = 15.50; // Tuotteen 2 hinta
+let product3Price = 42.75; // Tuotteen 3 hinta
+let product4Price = 9.99;  // Tuotteen 4 hinta
+
+// Lasketaan tuotteiden yhteishinta
+let totalPrice = product1Price + product2Price + product3Price + product4Price;
+
+// Tulostetaan yhteishinta konsoliin
+console.log("Ostoskorin yhteishinta: €" + totalPrice.toFixed(2));
+
+// Luo muuttujat a ja b ja anna niille kokonaislukuarvot
+let a = 10;
+let b = 3;
+
+// Yhteenlasku: Lasketaan a + b ja tallennetaan tulos muuttujaan 'summa'
+let summa = a + b; 
+
+// Vähennyslasku: Lasketaan a - b ja tallennetaan tulos muuttujaan 'erotus'
+let erotus = a - b; 
+
+// Kertolasku: Lasketaan a * b ja tallennetaan tulos muuttujaan 'tulo'
+let tulo = a * b; 
+
+// Jakolasku: Lasketaan a / b ja tallennetaan tulos muuttujaan 'osamaara'
+let osamaara = a / b; 
+
+// Jakojäännös: Lasketaan a % b (jakojäännös) ja tallennetaan tulos muuttujaan 'jakojaannos'
+let jakojaannos = a % b; 
+
+// Tulostetaan operaation tulokset konsoliin
+console.log("Summa (a + b):", summa); // 10 + 3 = 13
+console.log("Erotus (a - b):", erotus); // 10 - 3 = 7
+console.log("Tulo (a * b):", tulo); // 10 * 3 = 30
+console.log("Osamäärä (a / b):", osamaara); // 10 / 3 = 3.3333...
+console.log("Jakojäännös (a % b):", jakojaannos); // 10 % 3 = 1
+
+// Luo kaksi muuttujaa, etunimi ja sukunimi, ja aseta niihin omat etu- ja sukunimesi
+let etunimi = "Maija";  // Esimerkki etunimi
+let sukunimi = "Meikäläinen";  // Esimerkki sukunimi
+
+// Yhdistä etunimi ja sukunimi
+let kokoNimi = etunimi + " " + sukunimi;
+
+// Tulosta koko nimi konsoliin
+console.log(kokoNimi);  // Tulostaa "Maija Meikäläinen"
+
+// Tavallinen funktio sum1, joka palauttaa a:n ja b:n summan
+function sum1(a, b) {
+    return a + b;
+}
+
+// Nuolifunktio sum2, joka tekee saman asian
+const sum2 = (a, b) => a + b;
+
+// Esimerkki - älä muokkaa
+console.log(sum1(1, 3)); // 1 + 3 = 4
+console.log(sum1(2, 5)); // 2 + 5 = 7
+console.log(sum2(4, 3)); // 4 + 3 = 7
+console.log(sum2(7, 5)); // 7 + 5 = 12
+
+// Tavallinen funktio multiply1, joka palauttaa a:n ja b:n tulon (kertolaskun tulos)
+function multiply1(a, b) {
+    return a * b;
+}
+
+// Nuolifunktio multiply2, joka tekee saman asian
+const multiply2 = (a, b) => a * b;
+
+// Esimerkkikäyttö - älä muokkaa
+console.log(multiply1(2, 4)); // 2 * 4 = 8
+console.log(multiply2(3, 2)); // 3 * 2 = 6
+
+// Funktio laskeNelionPintaala, joka laskee neliön pinta-alan
+function laskeNelionPintaala(sivunPituus) {
+    return sivunPituus * sivunPituus;
+}
+
+// Testataan funktiota eri sivupituuksilla ja tulostetaan pinta-alat konsoliin
+console.log("Pinta-ala (sivun pituus 4):", laskeNelionPintaala(4)); // 4 * 4 = 16
+console.log("Pinta-ala (sivun pituus 5):", laskeNelionPintaala(5)); // 5 * 5 = 25
+console.log("Pinta-ala (sivun pituus 7):", laskeNelionPintaala(7)); // 7 * 7 = 49
+console.log("Pinta-ala (sivun pituus 10):", laskeNelionPintaala(10)); // 10 * 10 = 100
+
+// Funktio laskeKolmionPintaala, joka laskee kolmion pinta-alan
+function laskeKolmionPintaala(kannanPituus, korkeus) {
+    return (kannanPituus * korkeus) / 2;
+}
+
+// Testataan funktiota eri kannan pituuksilla ja korkeuksilla, ja tulostetaan pinta-alat konsoliin
+console.log("Pinta-ala (kannan pituus 6, korkeus 4):", laskeKolmionPintaala(6, 4)); // (6 * 4) / 2 = 12
+console.log("Pinta-ala (kannan pituus 8, korkeus 5):", laskeKolmionPintaala(8, 5)); // (8 * 5) / 2 = 20
+console.log("Pinta-ala (kannan pituus 10, korkeus 7):", laskeKolmionPintaala(10, 7)); // (10 * 7) / 2 = 35
+console.log("Pinta-ala (kannan pituus 12, korkeus 9):", laskeKolmionPintaala(12, 9)); // (12 * 9) / 2 = 54
+
+// Funktio getCharCount, joka laskee merkkijonon pituuden
+function getCharCount(str) {
+    return str.length;  // Palautetaan merkkijonon pituus
+}
+
+// Esimerkkikäyttö - älä muokkaa
+console.log(getCharCount('Sam')); // 3
+console.log(getCharCount('Alex 123')); // 8
+console.log(getCharCount('Jimi was here')); // 13
+
+// Funktio shoutMyName, joka palauttaa nimen isolla kirjaimella
+function shoutMyName(name) {
+    return name.toUpperCase();  // Muutetaan nimi isoiksi kirjaimiksi
+}
+
+// Esimerkkikäyttö - älä muokkaa
+console.log(shoutMyName('Sam')); // "SAM"
+console.log(shoutMyName('Charley')); // "CHARLEY"
+console.log(shoutMyName('alex')); // "ALEX"
+
+// Funktio lowerName, joka palauttaa nimen pienillä kirjaimilla
+function lowerName(name) {
+    return name.toLowerCase();  // Muutetaan nimi pieniksi kirjaimiksi
+}
+
+// Esimerkkikäyttö - älä muokkaa
+console.log(lowerName('Sam')); // "sam"
+console.log(lowerName('ALEX')); // "alex"
+
+// Funktio upperName, joka palauttaa nimen isoilla kirjaimilla
+function upperName(name) {
+    return name.toUpperCase();  // Muutetaan nimi isoiksi kirjaimiksi
+}
+
+// Kutsutaan tekemäämme funktiota
+console.log(upperName('Sam')); // "SAM"
+console.log(upperName('alex')); // "ALEX"
+
+// Funktio getFirstCharacter, joka palauttaa merkkijonon ensimmäisen merkin
+function getFirstCharacter(name) {
+    return name.charAt(0);  // Palautetaan merkkijonon ensimmäinen merkki
+}
+
+// Esimerkkikäyttö - älä muokkaa
+console.log(getFirstCharacter('Amsterdam')); // "A"
+console.log(getFirstCharacter('Japan')); // "J"
+
+// Funktio getLastCharacter, joka palauttaa merkkijonon viimeisen merkin
+function getLastCharacter(name) {
+    return name.charAt(name.length - 1);  // Palautetaan merkkijonon viimeinen merkki
+}
+
+// Kutsutaan tekemäämme funktiota
+console.log(getLastCharacter('Amsterdam')); // "m"
+console.log(getLastCharacter('Japan')); // "n"
+
+// Funktio getLastCharacter, joka palauttaa merkkijonon viimeisen merkin
+function getLastCharacter(name) {
+  return name.charAt(name.length - 1);  // Palautetaan merkkijonon viimeinen merkki
+}
+
+// Esimerkkikäyttö - älä muokkaa
+console.log(getLastCharacter('Sam')); // "m"
+console.log(getLastCharacter('Alex')); // "x"
+console.log(getLastCharacter('Charley')); // "y"
+
+// Funktio getFirstCharacter, joka palauttaa merkkijonon ensimmäisen merkin
+function getFirstCharacter(name) {
+  return name.charAt(0);  // Palautetaan merkkijonon ensimmäinen merkki
+}
+
+// Kutsutaan tekemäämme funktiota
+console.log(getFirstCharacter('Sam')); // "S"
+console.log(getFirstCharacter('Alex')); // "A"
+console.log(getFirstCharacter('Charley')); // "C"
+
+// Funktio skipFirstCharacter, joka palauttaa merkkijonon ilman ensimmäistä merkkiä
+function skipFirstCharacter(text) {
+  return text.slice(1);  // Poistetaan ensimmäinen merkki käyttämällä slicea
+}
+
+// Esimerkkikäyttö - älä muokkaa
+console.log(skipFirstCharacter('Xcode')); // "code"
+console.log(skipFirstCharacter('Hello')); // "ello"
+
+// Funktio skipLastCharacter, joka palauttaa merkkijonon ilman viimeistä merkkiä
+function skipLastCharacter(text) {
+  return text.slice(0, text.length - 1);  // Poistetaan viimeinen merkki
+}
+
+// Kutsutaan tekemäämme funktiota
+console.log(skipLastCharacter('Xcode')); // "Xcod"
+console.log(skipLastCharacter('Hello')); // "Hell"
+
+// Funktio concatInitials, joka yhdistää etunimen ja sukunimen ensimmäiset kirjaimet
+function concatInitials(firstNameInitial, lastNameInitial) {
+  return firstNameInitial + lastNameInitial;  // Yhdistetään molemmat kirjaimet
+}
+
+// Esimerkkikäyttö - älä muokkaa
+console.log(concatInitials('J', 'D')); // "JD"
+console.log(concatInitials('S', 'B')); // "SB"
+
+// Funktio concatNumbers, joka yhdistää kaksi numeroa merkkijonoksi
+function concatNumbers(num1, num2) {
+  return num1.toString() + num2.toString();  // Muutetaan numerot merkkijonoiksi ja yhdistetään
+}
+
+// Kutsutaan tekemäämme funktiota
+console.log(concatNumbers(12, 34)); // "1234"
+console.log(concatNumbers(56, 78)); // "5678"
+
+// Funktio sayHello, joka lisää nimen tervehdykseen
+function sayHello(name) {
+  return `Hello ${name}`;  // Palautetaan tervehdys, jossa on nimen paikka
+}
+
+// Esimerkkikäyttö - älä muokkaa
+console.log(sayHello('Alex')); // "Hello Alex"
+console.log(sayHello('Sam')); // "Hello Sam"
+
+// Funktio sayGoodDay, joka toivottaa hyvää päivää käyttäjän nimellä
+function sayGoodDay(name) {
+  return `Good day, ${name}!`;  // Palautetaan tervehdys
+}
+
+// Kutsutaan tekemäämme funktiota
+console.log(sayGoodDay('Maria')); // "Good day, Maria!"
+console.log(sayGoodDay('John')); // "Good day, John!"
+
+// Funktio getFullName, joka palauttaa koko nimen interpolointia käyttäen
+function getFullName(firstName, lastName) {
+  return `${firstName} ${lastName}`;  // Yhdistetään etunimi ja sukunimi
+}
+
+// Esimerkkikäyttö - älä muokkaa
+console.log(getFullName('Sam', 'Doe')); // "Sam Doe"
+console.log(getFullName('Alex', 'Blue')); // "Alex Blue"
+
+// Funktio getFullNameWithMiddleName, joka palauttaa koko nimen keskinimen kanssa
+function getFullNameWithMiddleName(firstName, middleName, lastName) {
+  return `${firstName} ${middleName} ${lastName}`;  // Yhdistetään etunimi, keskinimi ja sukunimi
+}
+
+// Kutsutaan tekemäämme funktiota
+console.log(getFullNameWithMiddleName('John', 'Paul', 'Smith')); // "John Paul Smith"
+console.log(getFullNameWithMiddleName('Mary', 'Ann', 'Johnson')); // "Mary Ann Johnson"
+
+// Funktio capitalize, joka muuttaa sanan ensimmäisen kirjaimen isoksi
+function capitalize(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();  // Muutetaan ensimmäinen kirjain isoksi ja loput pieniksi
+}
+
+// Esimerkkikäyttö - älä muokkaa
+console.log(capitalize('sam')); // "Sam"
+console.log(capitalize('ALEX')); // "Alex"
+console.log(capitalize('chARLie')); // "Charlie"
+
+// Funktio capitalizeWord, joka muuttaa ensimmäisen kirjaimen isoksi ja loput pieniksi
+function capitalizeWord(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();  // Sama logiikka kuin edellisessä
+}
+
+// Kutsutaan tekemäämme funktiota
+console.log(capitalizeWord('hello')); // "Hello"
+console.log(capitalizeWord('WORLD')); // "World"
+
     </script>
     <!-- Javascript aina bodyn sisällä VIIMEISENÄ -->
 </body>
