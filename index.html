@@ -37,6 +37,49 @@
         // Tulostetaan student-muuttujan arvo konsoliin
         console.log("Opiskelijan nimi: " + student);
 
+        let age = 25; // Kokonaisluku
+        let Name= "Mikko"; // Merkkijono
+        let isStudent = true; // Totuusarvo (boolean)
+        let hobbies = ["urheilu", "musiikki", "lukeminen"]; // Taulukko, joka sisältää merkkijonoja
+        let info = { // Olio, jossa on kaksi ominaisuutta
+        schoolName: "Helsingin yliopisto",
+        grade: 3
+};
+
+// Tulostetaan muuttujat konsoliin
+console.log("Age:", age);
+console.log("Name:", name);
+console.log("Is student:", isStudent);
+console.log("Hobbies:", hobbies);
+console.log("Info:", info);
+
+// Käytetään typeof-operatoria ja tulostetaan tietotyypit konsoliin
+console.log("Age tietotyyppi:", typeof age);
+console.log("Name tietotyyppi:", typeof name);
+console.log("Is student tietotyyppi:", typeof isStudent);
+console.log("Hobbies tietotyyppi:", typeof hobbies);
+console.log("Info tietotyyppi:", typeof info);
+
+// Täydennä funktio convertNumberToString niin, että se muuntaa saamansa numeron merkkijonoksi.
+// Täydennä funktio convertStringToNumber niin, että se muuntaa saamansa merkkijonon numeroksi.
+
+function convertNumberToString(number) {
+  return number;
+}
+
+function convertStringToNumber(string) {
+  return string;
+}
+
+// Esimerkki - älä muokkaa
+console.log(convertNumberToString(42)); // haluttu vastaus: "42"
+console.log(convertNumberToString(97)); // haluttu vastaus: "97"
+console.log(convertNumberToString(11)); // haluttu vastaus: "11"
+
+console.log(convertStringToNumber('42')); // haluttu vastaus: 42
+console.log(convertStringToNumber('97')); // haluttu vastaus: 97
+console.log(convertStringToNumber('11')); // haluttu vastaus: 11
+
     </script>
     <!-- Javascript aina bodyn sisällä VIIMEISENÄ -->
 </body>
