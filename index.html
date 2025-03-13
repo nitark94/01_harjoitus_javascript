@@ -80,6 +80,53 @@ console.log(convertStringToNumber('42')); // haluttu vastaus: 42
 console.log(convertStringToNumber('97')); // haluttu vastaus: 97
 console.log(convertStringToNumber('11')); // haluttu vastaus: 11
 
+function fahrenheitToCelsius(fahrenheit) {
+  // Lasketaan Celsius-asteet ja pyöristetään yhteen desimaaliin
+  let celsius = (fahrenheit - 32) * 5 / 9;
+  return celsius.toFixed(1); // Pyöristetään yhteen desimaaliin
+}
+
+// Esimerkki - älä muokkaa
+console.log(fahrenheitToCelsius(21)); // haluttu tulos: "-6,1"
+
+// Luo muuttuja nimeltä 'firstNumber' ja anna sille liukulukuarvo
+let firstNumber = 7.4;
+
+// Luo muuttuja nimeltä 'secondNumber' ja anna sille eri liukulukuarvo
+let secondNumber = 5.8;
+
+// Pyöristä 'firstNumber' ja 'secondNumber' lähimpään kokonaislukuun
+let roundedFirstNumber = Math.round(firstNumber);
+let roundedSecondNumber = Math.round(secondNumber);
+
+// Laske neliöjuuri 'roundedFirstNumber':istä ja tallenna se muuttujaan 'sqrtFirstNumber'
+let sqrtFirstNumber = Math.sqrt(roundedFirstNumber);
+
+// Etsi suurempi numero 'roundedFirstNumber':n ja 'roundedSecondNumber':n välillä ja tallenna se 'maxNum' muuttujaan
+let maxNum = Math.max(roundedFirstNumber, roundedSecondNumber);
+
+// Tulostetaan tulokset konsoliin
+console.log("Rounded firstNumber:", roundedFirstNumber);
+console.log("Rounded secondNumber:", roundedSecondNumber);
+console.log("Square root of rounded firstNumber:", sqrtFirstNumber);
+console.log("Max of rounded firstNumber and secondNumber:", maxNum);
+
+// Käytetään typeof-operatoria tarkistamaan tietotyypit
+console.log("Type of roundedFirstNumber:", typeof roundedFirstNumber);
+console.log("Type of roundedSecondNumber:", typeof roundedSecondNumber);
+console.log("Type of sqrtFirstNumber:", typeof sqrtFirstNumber);
+console.log("Type of maxNum:", typeof maxNum);
+
+// Luo kaksi muuttuja
+let number1 = 10; // Esimerkki arvo
+let number2 = 2;  // Esimerkki arvo
+
+// Laske näiden kahden numeron jakolaskun tulos ja tallenna se uuteen muuttujaan
+let divisionResult = number1 / number2;
+
+// Tulosta jakolaskun tulos konsoliin
+console.log("Jakolaskun tulos:", divisionResult);
+
     </script>
     <!-- Javascript aina bodyn sisällä VIIMEISENÄ -->
 </body>
